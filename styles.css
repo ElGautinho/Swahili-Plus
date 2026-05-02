@@ -240,6 +240,10 @@ footer {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.contact-info {
+  border-left: 4px solid #009688;
+}
+
 .contact-info h3,
 .contact-form h3 {
   color: #009688;
@@ -248,18 +252,30 @@ footer {
 }
 
 .info-item {
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 18px;
+  background: #f8fafb;
+  border: 1px solid #e6eef0;
+  border-radius: 10px;
+  margin-bottom: 18px;
 }
 
 .info-item strong {
-  color: #333;
+  color: #00594e;
   display: block;
-  margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .info-item p {
-  color: #666;
+  color: #4a4a4a;
   margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .form-group {
