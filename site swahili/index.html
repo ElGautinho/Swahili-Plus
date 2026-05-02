@@ -13,11 +13,17 @@
     <header>
         <nav>
             <h1>Jifunze Swahili</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Cours</a></li>
-                <li><a href="#">Quiz</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#cours">Cours</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -28,7 +34,7 @@
         </div>
     </header>
 
-    <section class="cards">
+    <section id="accueil" class="cards">
 
         <div class="card">
             <h3>Salutations</h3>
@@ -45,6 +51,120 @@
             <p>Testez vos connaissances</p>
         </div>
 
+    </section>
+
+    <section id="cours" class="section-content">
+        <div class="container">
+            <h2>Nos Cours</h2>
+            <p class="section-intro">Apprenez le Swahili progressivement avec nos cours structurés</p>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Niveau Débutant</h3>
+                    <p>Apprenez les bases du Swahili, les salutations et expressions courantes.</p>
+                    <ul>
+                        <li>Jambo - Bonjour</li>
+                        <li>Asante - Merci</li>
+                        <li>Karibu - Bienvenue</li>
+                        <li>Habari - Comment allez-vous</li>
+                    </ul>
+                </div>
+                <div class="course-card">
+                    <h3>Niveau Intermédiaire</h3>
+                    <p>Améliorez vos compétences avec des conversations pratiques.</p>
+                    <ul>
+                        <li>Conversations courantes</li>
+                        <li>Vocabulaire commercial</li>
+                        <li>Expressions idiomatiques</li>
+                        <li>Grammaire avancée</li>
+                    </ul>
+                </div>
+                <div class="course-card">
+                    <h3>Niveau Avancé</h3>
+                    <p>Maîtrisez la langue avec des contenus plus complexes.</p>
+                    <ul>
+                        <li>Textes littéraires</li>
+                        <li>Débats et discussions</li>
+                        <li>Culture Swahili</li>
+                        <li>Prononciation perfectionnée</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section-content">
+        <div class="container">
+            <h2>Testez Vos Connaissances</h2>
+            <p class="section-intro">Évaluez votre progression avec nos quiz interactifs</p>
+            <div class="quiz-grid">
+                <div class="quiz-card">
+                    <h3>Quiz Vocabulaire</h3>
+                    <p>10 questions</p>
+                    <p class="description">Testez votre connaissance du vocabulaire Swahili</p>
+                    <button class="quiz-btn">Commencer</button>
+                </div>
+                <div class="quiz-card">
+                    <h3>Quiz Grammaire</h3>
+                    <p>15 questions</p>
+                    <p class="description">Évaluez vos connaissances grammaticales</p>
+                    <button class="quiz-btn">Commencer</button>
+                </div>
+                <div class="quiz-card">
+                    <h3>Quiz Prononciation</h3>
+                    <p>8 questions</p>
+                    <p class="description">Améliorez votre prononciation</p>
+                    <button class="quiz-btn">Commencer</button>
+                </div>
+                <div class="quiz-card">
+                    <h3>Quiz Complet</h3>
+                    <p>25 questions</p>
+                    <p class="description">Un défi complet de tous les domaines</p>
+                    <button class="quiz-btn">Commencer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-content">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <p class="section-intro">Avez-vous des questions? Nous serions heureux de vous aider!</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informations de Contact</h3>
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <p>info@jifunzeswahili.com</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Téléphone:</strong>
+                        <p>+255 123 456 789</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Localisation:</strong>
+                        <p>Dar es-Salaam, Tanzanie</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="form-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
