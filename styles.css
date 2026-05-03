@@ -61,6 +61,14 @@ nav a {
   padding: 80px 20px;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 .hero h2 {
   font-size: 42px;
   margin-bottom: 15px;
@@ -94,6 +102,15 @@ button {
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.card img,
+.course-card img,
+.quiz-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -319,8 +336,38 @@ footer {
   transition: background 0.3s ease;
 }
 
-.form-btn:hover {
-  background: #007a6b;
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.testimonial-card cite {
+  color: #009688;
+  font-weight: bold;
 }
 
 /* Responsive Design */
